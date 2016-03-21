@@ -1,7 +1,7 @@
 {
   "name": "move-panes-cabaret",
   "main": "./lib/move-panes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Move panes right, left, up, down, next or previous (no stack traces with @cabaret's fixes)",
   "activationCommands": {
     "atom-workspace": [
