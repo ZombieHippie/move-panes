@@ -9,12 +9,12 @@ cycling the active tab to next/previous panes.
 
 | Command name                        | Default key binding    |
 | ----------------------------------- |:----------------------:|
-| `move-panes:move-right`    | `cmd-ctrl-shift-right` |
-| `move-panes:move-left`     | `cmd-ctrl-shift-left`  |
-| `move-panes:move-up`       | `cmd-ctrl-shift-up`    |
-| `move-panes:move-down`     | `cmd-ctrl-shift-down`  |
-| `move-panes:move-next`     | None                   |
-| `move-panes:move-previous` | None                   |
+| `move-panes-cabaret:move-right`    | `cmd-ctrl-shift-right` |
+| `move-panes-cabaret:move-left`     | `cmd-ctrl-shift-left`  |
+| `move-panes-cabaret:move-up`       | `cmd-ctrl-shift-up`    |
+| `move-panes-cabaret:move-down`     | `cmd-ctrl-shift-down`  |
+| `move-panes-cabaret:move-next`     | None                   |
+| `move-panes-cabaret:move-previous` | None                   |
 
 ## Related packages
 
@@ -26,4 +26,4 @@ cycling the active tab to next/previous panes.
 - [Layout Manager](https://atom.io/packages/layout-manager)
 
 
-# [Feedback](https://github.com/santip/move-panes/issues) and PRs are welcome.
+# [Feedback](https://github.com/ZombieHippie/move-panes/issues) and PRs are welcome.
