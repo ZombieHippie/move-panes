@@ -1,19 +1,19 @@
 {
-  "name": "move-panes",
+  "name": "move-panes-cabaret",
   "main": "./lib/move-panes",
   "version": "0.2.0",
-  "description": "Move panes right, left, up, down, next or previous",
+  "description": "Move panes right, left, up, down, next or previous (no stack traces with @cabaret's fixes)",
   "activationCommands": {
     "atom-workspace": [
-      "move-panes:move-right",
-      "move-panes:move-left",
-      "move-panes:move-up",
-      "move-panes:move-down",
-      "move-panes:move-next",
-      "move-panes:move-previous"
+      "move-panes-cabaret:move-right",
+      "move-panes-cabaret:move-left",
+      "move-panes-cabaret:move-up",
+      "move-panes-cabaret:move-down",
+      "move-panes-cabaret:move-next",
+      "move-panes-cabaret:move-previous"
     ]
   },
-  "repository": "https://github.com/santip/move-panes",
+  "repository": "https://github.com/ZombieHippie/move-panes",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
