@@ -1,4 +1,14 @@
 module.exports =
+  config:
+    toggles:
+      type: 'object'
+      order: 1
+      properties:
+        autoCreate:
+          title: 'Create a new pane'
+          description: 'Create a new pane if cannot move'
+          type: 'boolean'
+          default: true
 
   activate: (state) ->
     atom.commands.add "atom-workspace", "move-panes-cabaret:move-right": => @moveRight()
@@ -26,11 +36,25 @@ module.exports =
     target = @active()
     @swapEditor source, target
 
+  newPane: (pane, orientation, delta)->
+    if orientation == 'horizontal' && delta == +1
+      return pane.splitRight()
+    else if orientation == 'horizontal' && delta == -1
+      return pane.splitLeft()
+    else if orientation == 'vertical' && delta == -1
+      return pane.splitUp()
+    else if orientation == 'vertical' && delta == +1
+      return pane.splitDown()
+    else
+      return null
+
   move: (orientation, delta) ->
     pane = atom.workspace.getActivePane()
     [axis,child] = @getAxis pane, orientation
     if axis?
       target = @getRelativePane axis, child, delta
+    if !target? && atom.config.get('move-panes-cabaret.toggles.autoCreate')
+      target = @newPane pane, orientation, delta
     if target?
       @swapEditor pane, target
 
